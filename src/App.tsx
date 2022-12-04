@@ -18,7 +18,7 @@ function App() {
   })
 
   const x = useMemo(() => [1, 50, 100, 200, 300, 500, 600], []);
-  const y = useMemo(()=> [20, 100, 50, 300, 500, 400, 600], [])
+  const y = useMemo(()=> [20, 100, 50, 300, 500, 400, 530], [])
 
   const regressionCoefficients = useMemo(() => calculateRegressionCoefficients(x, y), [x, y]);
   const regressionPoints = useMemo(() => calculateRegressionLine([0, 600], regressionCoefficients), [regressionCoefficients]);
